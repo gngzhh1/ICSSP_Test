@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/agenda_layout"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<Button android:id="@+id/agenda_notice"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/ic_menu_add"
+		android:layout_centerVertical="true"/>
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="60px"
+		android:layout_centerVertical="true">
+
+		<TextView android:id="@+id/agenda_title" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textColor="#ff000000"
+			android:text="会议的名字可以很长很长"
+			android:textSize="22px" />
+			<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true">
+		<TextView android:id="@+id/agenda_time" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textColor="#FF000000"
+			android:text="08:00-09:00"
+			android:textSize="13px" />
+		<TextView android:id="@+id/agenda_address" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textColor="#FF000000"
+			android:layout_marginLeft="20px"
+			android:text="也许这个地方就叫这个地方"
+			android:textSize="13px" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+	<Button android:id="@+id/agenda_view_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/right_arrow"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"/>
+</RelativeLayout>
